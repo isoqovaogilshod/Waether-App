@@ -33,6 +33,7 @@ body {
   border: 0;
   outline: 0;
   background: #ebfffc;
+  max-width: 100%;
   color: #555;
   padding: 10px 25px;
   height: 60px;
@@ -43,6 +44,7 @@ body {
 }
 
 .search button {
+  padding: 20px;
   border: 0;
   outline: 0;
   background: #ebfffc;
@@ -50,6 +52,7 @@ body {
   width: 60px;
   height: 60px;
   cursor: pointer;
+  max-width: 100%;
 }
 
 .search button i {
@@ -116,4 +119,31 @@ body {
   font-size: 14px;
   margin-top: 10px;
   display: none;
+}
+
+@media screen and (max-width: 450px ) {
+  .card {
+    max-width: 280px;
+    padding: 22px 20px;
+  }
+
+  .search {
+    width: 75%;
+  }
+
+  .search input {
+    font-size: 16px;
+  }
+  .details{
+    padding: ;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 16px;
+  }
+
+  .details  p {
+    font-size: 14px;
+  }
 }
